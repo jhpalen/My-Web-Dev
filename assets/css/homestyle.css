@@ -1,0 +1,57 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+.section {
+	height: 457px;
+    width: 100%;
+}
+
+.center {
+  position: relative;
+  overflow: auto;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#aboutMeLeft {
+	color: white;
+	background-color: #f7484e;	
+}
+
+#aboutMeRight {
+	padding: 20px 20px 20px 20px;
+}
+
+#techSkillsLeft{
+	color:white;
+    background-color: #26AF18;	
+}
+
+#contactLeft {
+	background-color: #292929;
+	color: white;
+}
