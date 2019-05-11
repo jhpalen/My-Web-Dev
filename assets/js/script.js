@@ -1,6 +1,6 @@
 "use strict";
 {
-	const txt = 'HAZEPALEN';
+	const txt = 'HAZE PALEN';
 	const viscosity = 0.005;
 	const stiffness = 0.99;
 	class Point {
@@ -145,7 +145,7 @@
 			p.p0 = points[i - 1];
 			p.p1 = points[i + 1];
 			p.s = sx;
-			p.texture(txt.charAt(i - 1), i === 5 || i === 1 ? "#f80" : "#fff");
+			p.texture(txt.charAt(i - 1), i === 6 || i === 1 ? "#f80" : "#fff");
 		}
 	}
 	const run = () => {
