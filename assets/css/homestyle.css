@@ -47,6 +47,7 @@ body, html, .row {
 .center {
   position: relative;
   overflow: auto;
+  min-height: 300px;
 }
 
 h1 {
@@ -60,7 +61,6 @@ h1 {
 }
 
 #aboutMeLeft {
-	min-height: 300px;
 	color:white;
     background-color: #ff85a2;	
 }
