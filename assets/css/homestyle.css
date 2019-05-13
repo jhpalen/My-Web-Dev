@@ -12,10 +12,6 @@ left:0;
   width:100%; 
 }
 
-#video-projects-bg{
-  height: 100%;	
-}
-
 body, html, .row {
 	margin: 0;
 	padding: 0;
@@ -60,6 +56,24 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.underline-up{
+  margin: 0;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);	
+}
+
+.underline-down{
+  margin: 0;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);	
+}
+
 #aboutMeLeft {
 	color:white;
     background-color: #ff85a2;	
@@ -67,8 +81,13 @@ h1 {
 
 #aboutMeRight {
 	padding: 20px 20px 20px 20px;
-	background-color:#ffffff;
-	background-image: url('../images/glitter-bg.jpg');
+	background-image: url('../images/Pinterest.jpg');
+	background-size: cover;
+}
+
+#projectsRight{
+	background-image: url('../images/projects.jpg');
+	background-size: contain;
 }
 
 #techSkillsLeft{
@@ -76,13 +95,67 @@ h1 {
     background-color: #c49bdf;	
 }
 
+#techSkillsRight{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+}
+
 #Contact{
 	background-color: #f03e3e;
 }
 
 #contactLeft {
-	background-color: #84f2b3;
-	background-image: url('../images/contact-bg.jpg');	
+	color: white;
+	background-color: #6efc85;
+}
+
+#contactLeft:hover {
+	color: black;
+}
+
+#contactRight{
+	background-color: #fabec0;
+}
+
+.transparent_img{
+	opacity: 0.5;
+}
+
+
+
+
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+}
+
+.img__description {
+  position: absolute;  
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about_img:hover{
+	opacity: 0.5;
+}
+
+.transparent_img:hover{
+	opacity: 1.0;
 }
 
 #icons{
@@ -110,8 +183,8 @@ h1 {
 .stars{
     float: right;
 	z-index: 1;
-	left: 90px;
-	top: 600px;
+	left: 70px;
+	top: 1380px;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -149,11 +222,7 @@ h1 {
 	#contactLeft{
 	    min-height: 220px;	
 	}
-	
-	#contactText{
-	    padding-top: 20px;
-	}
-	
+		
 	#cps2{
     padding-top: 0px;	
 }

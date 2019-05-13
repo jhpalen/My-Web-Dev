@@ -52,45 +52,54 @@ HP
 </nav>
 
 <div class="animated fadeIn text-center div_space" style="background-color: #ffd1f3">
+<div class="video-container">
+<video autoplay loop muted id="video-projects-bg">
+<source src="assets/images/navbar_bg.mp4" type="video/mp4">
+</video>
+</div>
 <img src="assets/images/banner.png" height="595px">
     </div>
 
-<div class="stars" style="position: absolute">
+<div class="stars transparent_img" style="position: absolute">
 		    <img src="assets/images/stars2.gif">
 		</div>	
 
 <div id="About"></div>
 <div class="row section">
-	<div class="center animated fadeInRight col-lg-6 col-md-12 col-sm-12" id="aboutMeLeft">
+	<div class="center animated fadeInDown col-lg-6 col-md-12 col-sm-12" id="aboutMeLeft">
+		<span class="underline-up">=====================</span>
 	<h1>About Me</h1>	
+		<span class="underline-down">=====================</span>
     </div>
 	<div class="animated fadeInUp col-lg-6 col-md-12 col-sm-12" id="aboutMeRight">
 	    <h5><strong>I am a Full-stack Web Developer living in Makati City.</strong></h5>
 					<p>A graduate of <em>Bachelor of Science in Information Technology major in Programming</em>, I bring with me 4 years of studies in the field of Information Technology. I'm currently working as a Shopify guru, setting up and customizing layout of online stores. Moreover, I'm attending Tuitt Bootcamp to hone my skills in web development.</p>
 					<p>As how “The Six Sigma Guy” put it, <em><quote>The moment you stop learning is when you start your decline.</quote></em></p>
 					<p>I spend my rest days either by reading a book while sipping tea or bonding with family.</p>
-					<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
-					<img class="my-3" src="assets/images/family.jpg" height="200px" width="200px" style="border-radius: 150px">
-					<img class="my-3" src="assets/images/chillin.jpg" height="200px" width="200px" style="border-radius: 150px">
-					</div>
-					</div>
+					
+						<div class="img__wrap text-center">
+					<img class="about_img my-3" src="assets/images/family.jpg" height="200px" width="200px" style="border-radius: 150px">
+					<p class="img__description">#fambam</p>
+				</div>
+				<div class="img__wrap text-center">
+					<img class="about_img my-3" src="assets/images/chillin.jpg" height="200px" width="200px" style="border-radius: 150px">
+					<p class="img__description">#chillin</p>
+				</div>
 
 		</div>
 </div>
 
 
 <div class="row section" id="Projects">
-	<div class="center col-lg-6 col-md-12 col-sm-12" style="background-color:#bae1ff;color:#010501">
-        <h1>My Projects</h1>
+	<div class="center animated fadeInDown col-lg-6 col-md-12 col-sm-12" style="background-color:#81dafc; color: white;">
+        <span class="underline-up">=====================</span>
+	<h1>My Projects</h1>
+		<span class="underline-down">=====================</span>
+
     </div>
-	<div class="center col-lg-6 col-md-12 col-sm-12">
+	<div class="center animated fadeInUp col-lg-6 col-md-12 col-sm-12" id="projectsRight">
 		
-<div class="video-container">
-<video autoplay loop muted id="video-projects-bg">
-<source src="assets/images/navbar_bg.mp4" type="video/mp4">
-</video>
-</div>
+
 		
 <div class="row text-center">
 <div class="col-lg-4 mt-4" id="cps1">
@@ -109,7 +118,7 @@ HP
   <img class="card-img-top" src="assets/images/cps2.jpg" alt="Capstone 2">
   <div class="card-body">
     <h6 class="card-title">Capstone 2</h6>
-    <p class="card-text">Using Laravel.</p>
+    <p class="card-text">Library Borrowing System.</p>
     <a href="https://capstone2-asset-management.herokuapp.com/" class="btn btn-primary">View Project</a>
   </div>
 </div>
@@ -117,10 +126,10 @@ HP
 	
 <div class="col-lg-4 mt-4 mb-4" id="cps3">
 <div class="card">
-  <img class="card-img-top" src="assets/images/cps2.jpg" alt="Capstone 3">
+  <img class="card-img-top" src="assets/images/oppa.jpg" alt="Capstone 3">
   <div class="card-body">
     <h6 class="card-title">Capstone 3</h6>
-    <p class="card-text">Using MELN.</p>
+    <p class="card-text">Escort for Hire System</p>
     <a href="https://jhpalen.github.io/cps1-WildProtect/" class="btn btn-primary">View Project</a>
   </div>
 </div>
@@ -132,11 +141,15 @@ HP
 </div>
 
 <div class="row section" id="Skills" style="background-color: #fff4d2">
-	<div class="center col-lg-6 col-md-12 col-sm-12" id="techSkillsLeft">
-        <h1 id="techSkills">Technical Skills</h1>
+	<div class="center animated fadeInDown col-lg-6 col-md-12 col-sm-12" id="techSkillsLeft">
+        
+
+            <span class="underline-up">=====================</span>
+	<h1 id="techSkills">Technical Skills</h1>
+		<span class="underline-down">=====================</span>
     </div>
-	<div class="col-lg-6 col-md-12 col-sm-12">
-	<div class="container mb-4">
+	<div class="animated fadeInUp col-lg-6 col-md-12 col-sm-12 pt-4 pb-4" id="techSkillsRight">
+	<div class="container my-4">
 	
 <h6 class="mt-4">HTML</h6> <div class="progress">
 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
@@ -177,10 +190,14 @@ HP
 </div>
 
 <div class="row section" id="Contact">
-	<div class="center col-lg-6 col-md-12 col-sm-12" id="contactLeft">
-        <h1 id="contactText">Contact Me</h1>
+	<div class="center animated fadeInDown col-lg-6 col-md-12 col-sm-12" id="contactLeft">
+        
+
+        <span class="underline-up">=====================</span>
+	<h1>Contact Me</h1>
+		<span class="underline-down">=====================</span>
     </div>
-	<div class="col-lg-6 col-md-12 col-sm-12" style="background-color: #f9e1e0">
+	<div class="animated fadeInUp col-lg-6 col-md-12 col-sm-12 pt-4" id="contactRight">
 	<div class="container my-4" style="position: relative">
 	    <h5><strong>If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.</strong></h5>
 				<p>I am available for full-time employment.</p>
@@ -192,7 +209,7 @@ HP
 					<a href="https://ph.linkedin.com/in/john-hazon-palen-9a073399"><i class="fab fa-linkedin-in"></i></a>
 					<a href="https://twitter.com/jhpalen"><i class="fab fa-twitter"></i></a>
 				</span>
-		<div class="starz" style="position: absolute">
+		<div class="starz transparent_img" style="position: absolute">
 		    <img src="assets/images/starz.gif">
 		</div>
 	</div>
@@ -202,6 +219,6 @@ HP
 
     <div class="push"></div>
 </div>
-<footer class="footer text-center" style="background-color: #f03e3e; color: white;">Copyright &copy; 2019</p>
+<footer class="footer text-center" style="background-color: #f03e3e; color: white;">Copyright &copy; 2019</footer>
 </body>
 </html>
