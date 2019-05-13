@@ -85,6 +85,12 @@ h1 {
 	background-size: cover;
 }
 
+#projectsLeft:hover {
+	color: black;
+	background-image: url('../images/projects-bg.jpg');
+	background-size: cover;
+}
+
 #projectsRight{
 	background-image: url('../images/projects.jpg');
 	background-size: contain;
@@ -95,7 +101,7 @@ h1 {
     background-color: #c49bdf;	
 }
 
-#techSkillsRight{
+#techSkillsRight:hover{
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
 }
@@ -111,6 +117,8 @@ h1 {
 
 #contactLeft:hover {
 	color: black;
+	background-image: url('../images/glitter-bg.jpg');
+	background-size: cover;
 }
 
 #contactRight{
