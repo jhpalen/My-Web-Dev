@@ -85,6 +85,10 @@ h1 {
 	background-size: cover;
 }
 
+#projectsLeft {
+  color: white;
+}
+
 #projectsLeft:hover {
 	color: black;
 	background-image: url('../images/projects-bg.jpg');
@@ -98,12 +102,16 @@ h1 {
 
 #techSkillsLeft{
 	color:white;
-    background-color: #c49bdf;	
+    background-color: #6666b2;	
 }
 
 #techSkillsRight:hover{
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  transition: background-color 2s;
 }
 
 #Contact{
@@ -112,17 +120,21 @@ h1 {
 
 #contactLeft {
 	color: white;
-	background-color: #6efc85;
+	background-color: #005582;
 }
 
 #contactLeft:hover {
 	color: black;
 	background-image: url('../images/glitter-bg.jpg');
 	background-size: cover;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  transition: background-color 2s;
 }
 
 #contactRight{
-	background-color: #fabec0;
+	background-color: #fff8b6;
 }
 
 .transparent_img{
