@@ -1,3 +1,10 @@
+body, html, .row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .video-container {
 z-index: -100;
 width:100%;
@@ -10,13 +17,11 @@ left:0;
 
 #video-bg{
   width:100%; 
+  min-height: 278%; 
 }
 
-body, html, .row {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+#video-projects-bg{
+ width:100%;
 }
 
 .wrapper {
@@ -33,6 +38,37 @@ body, html, .row {
 
 .footer{
   padding-top: 12px;	
+}
+
+.navbar-text{
+  color: black !important;
+}
+
+.navbar-text:hover{
+  color: white !important;
+}
+
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button1:hover {
+  background-color: #f80;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+}
+
+.button3:hover {
+  background-color: #f44336;
+}
+
+.button4:hover {
+  background-color: #555555;
 }
 
 .section {
@@ -89,15 +125,15 @@ h1 {
   color: white;
 }
 
-#projectsLeft:hover {
+/*#projectsLeft:hover {
 	color: black;
 	background-image: url('../images/projects-bg.jpg');
 	background-size: cover;
-}
+}*/
 
 #projectsRight{
 	background-image: url('../images/projects.jpg');
-	background-size: contain;
+	background-size: contain no repeat;
 }
 
 #techSkillsLeft{
@@ -105,33 +141,28 @@ h1 {
     background-color: #6666b2;	
 }
 
-#techSkillsRight:hover{
+/*#techSkillsRight:hover{
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
-  -webkit-transition: background-color 2s;
-  -moz-transition: background-color 2s;
-  -o-transition: background-color 2s;
-  transition: background-color 2s;
-}
+  -webkit-transition-duration: 0.4s;
+}*/
 
-#Contact{
+/*#Contact{
 	background-color: #f03e3e;
-}
+}*/
 
 #contactLeft {
 	color: white;
 	background-color: #005582;
 }
 
-#contactLeft:hover {
+/*#contactLeft:hover {
 	color: black;
 	background-image: url('../images/glitter-bg.jpg');
 	background-size: cover;
-  -webkit-transition: background-color 2s;
-  -moz-transition: background-color 2s;
-  -o-transition: background-color 2s;
-  transition: background-color 2s;
-}
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}*/
 
 #contactRight{
 	background-color: #fff8b6;
@@ -196,7 +227,7 @@ h1 {
 
 .starz{
     float: right;
-	bottom: -120px;
+	bottom: 10px;
 	right: 15px;
 }
 
@@ -204,7 +235,7 @@ h1 {
     float: right;
 	z-index: 1;
 	left: 70px;
-	top: 1380px;
+	top: 1115px;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
