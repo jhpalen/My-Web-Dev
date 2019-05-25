@@ -1,27 +1,16 @@
+/*color palette:
+  aquamarine: #98dbc6;
+  turquoise: #5bc8ac;
+  canary yellow: #e6d72a;
+  pink tulip: #f18d9e;
+  logom nga pink: rgba(255, 148, 180); or #ff94b9
+  light nga pink: rgba(255, 216, 213, 0.9); or #ffd8d5*/
+
 body, html, .row {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-}
-
-.video-container {
-z-index: -100;
-width:100%;
-height:100%;
-overflow:hidden;
-position:absolute;
-top:0;
-left:0;
-}
-
-#video-bg{
-  width:100%; 
-  min-height: 278%; 
-}
-
-#video-projects-bg{
- width:100%;
 }
 
 .wrapper {
@@ -37,15 +26,50 @@ left:0;
 }
 
 .footer{
+  background-color: #e7e7e7;
+  color: #737373;
+  font-weight: bold;
   padding-top: 12px;	
+  border: 1px solid white;
+}
+
+.navbar {
+  /*background-color: #ffd8d5;*/
+  font-weight: bold;
+  /*logom nga pink*/
+  /*background-color: rgba(255, 148, 180); or #ff94b9*/
+  /*background-color: rgba(255, 216, 213);*/
+  background-image: linear-gradient(10deg, #ffd8d5, #e7e7e7) !important;  
+  /*background-image: linear-gradient(-50deg, #c0fff4, #ff94b9);  */
+  /*light nga pink*/
+  /*text-shadow: 0px 2px 5px rgba(255, 216, 213, 0.9); or #ffd8d5*/
+}
+
+.navbar-collapse{
+  flex-grow: .5;
 }
 
 .navbar-text{
-  color: black !important;
+  color: white !important;
 }
 
 .navbar-text:hover{
   color: white !important;
+}
+
+.navbar-brand{
+  padding: 5px;
+}
+
+.navbar-brand:hover{
+  border-radius: 10px;
+  background-color: #ffd8d5;
+}
+
+.sticky-top.scrolled {
+  background-image: linear-gradient(10deg, #ffd8d5, #ffd8d5) !important;  
+  /*background-color: rgba(255, 148, 180) !important;*/
+  transition: background-color 1000ms linear;
 }
 
 .button {
@@ -55,118 +79,212 @@ left:0;
   border-radius: 10px;
 }
 
-.button1:hover {
-  background-color: #f80;
+.button:hover {
+  background-color: #ff94b9;
 }
 
-.button2:hover {
-  background-color: #008CBA;
-}
-
-.button3:hover {
-  background-color: #f44336;
-}
-
-.button4:hover {
-  background-color: #555555;
-}
-
-.section {
+/*.section {
 	min-height: 450px;
-    min-width: 100%;
-}
+  min-width: 100%;
+}*/
 
-.center {
+/*.center {
   position: relative;
   overflow: auto;
   min-height: 300px;
-}
+}*/
 
-h1 {
-  font-family: 'Dancing Script', cursive;
+/*h1 {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.underline-up{
-  margin: 0;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);	
-}
-
-.underline-down{
-  margin: 0;
-  position: absolute;
-  top: 62%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);	
-}
+}*/
 
 #aboutMeLeft {
-	color:white;
-    background-color: #ff85a2;	
+  color: #737373; /*light gray*/
+  /*background-image: linear-gradient(-90deg, #ffc0cb, #fff3f5);*/
+  background-image: linear-gradient(to bottom, #ffd8d5, #fff); 
+  padding-top: 160px; 
+  padding-left: 100px; 
+  padding-right: 100px; 
+  padding-bottom: 20px;
+}
+
+/*#aboutMeLeft:hover {
+  color: black;
+  transition-duration: 0.4s;
+  background-color: #ffd8d5;
+}*/
+
+#profilepic{
+  border-radius: 150px; 
+  position: absolute; 
+  top: 100px; 
+  left: 44%; 
+  z-index: 5;
 }
 
 #aboutMeRight {
-	padding: 20px 20px 20px 20px;
-	background-image: url('../images/Pinterest.jpg');
-	background-size: cover;
+  padding-top: 160px; 
+  padding-left: 100px; 
+  padding-right: 100px;
+  padding-bottom: 20px;
+  color: #737373;
+  /*background-image: linear-gradient(-90deg, #f5f5fd, #c0fff4);*/
+  background-image: linear-gradient(to bottom, #c0fff4, #fff);
 }
 
-#projectsLeft {
+/*========================== P R O J E C T S ==========================*/
+
+/*color palette:
+  aquamarine: #98dbc6;
+  turquoise: #5bc8ac;
+  canary yellow: #e6d72a;
+  pink tulip: #f18d9e;
+  logom nga pink: rgba(255, 148, 180); or #ff94b9
+  light nga pink: rgba(255, 216, 213, 0.9); or #ffd8d5*/
+
+#Projects{
+  color: #737373;
+  /*color: #f18d9e;*/
+  /*temporary color*/
+  background-image: linear-gradient(to bottom, #fff, #c0fff4);
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+#MyProjectsBox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
+  /*background-color: #f18d9e;*/
+  /*padding: 115px 90px 115px 90px;*/
+  border-radius: 15px;
 }
 
-/*#projectsLeft:hover {
-	color: black;
-	background-image: url('../images/projects-bg.jpg');
-	background-size: cover;
-}*/
-
-#projectsRight{
-	background-image: url('../images/projects.jpg');
-	background-size: contain no repeat;
+aside {
+  color: #737373;
+  background-image: linear-gradient(-90deg, #ffd8d5, #ffd8d5);  
+  /*background-color: #ffd8d5;*/
+  display: block;
+  position: relative;
+  margin: 10px 0;
+  border-radius: 15px;
+  /*background-color: #ff94b9;*/
+  padding-top: 20px; 
+  padding-bottom: 20px
 }
 
-#techSkillsLeft{
-	color:white;
-   background-color: #6666b2;	
+aside h3 {
+  font: bold 12px Sans-Serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  line-height: 24px;
 }
 
-/*#techSkillsRight:hover{
-	background-image: url('../images/bg.jpg');
-	background-size: cover;
-  -webkit-transition-duration: 0.4s;
-}*/
+/* Class name via Modernizr */
+html aside {
+  border-left: 34px solid #98dbc6;
+  padding-left: 10px;
+}
+html aside h3 {
+  /* Abs positioning makes it not take up vert space */
+  position: absolute;
+  top: 0;
+  left: 0;
 
-/*#Contact{
-	background-color: #f03e3e;
-}*/
+  /* Border is the new background */
+  background: none;
 
-#contactLeft {
-	color: white;
-	background-color: #005582;
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(90deg);
 }
 
-/*#contactLeft:hover {
-	color: black;
-	background-image: url('../images/glitter-bg.jpg');
-	background-size: cover;
-  -webkit-transition-duration: 0.4s;
+.capstonelogo{
+  border-radius: 15px; 
+  margin-bottom: 10px;
+  height: 150px;
+  width: 150px;
+  opacity: .6;
+  border: 5px solid #e6d72a;
+}
+
+.capstonelogo:hover{
+  opacity: 1;
   transition-duration: 0.4s;
-}*/
-
-#contactRight{
-	background-color: #fff8b6;
 }
+
+.viewProjectButton{
+  color: #fff;
+  background-color: #ff94b9;
+}
+
+.viewProjectButton:hover{
+  color: #fff;
+  background-color: #98dbc6;
+}
+
+
+/*========================== C O N T A C T ==========================*/
+
+/*color palette:
+  aquamarine: #98dbc6;
+  turquoise: #5bc8ac;
+  canary yellow: #e6d72a;
+  pink tulip: #f18d9e;
+  logom nga pink: rgba(255, 148, 180); or #ff94b9
+  light nga pink: rgba(255, 216, 213, 0.9); or #ffd8d5*/
+
+#Contact{
+  color: #737373;
+  /*color: #f18d9e;*/
+  /*temporary color*/
+  background-image: linear-gradient(to bottom, #c0fff4, #fff, #e7e7e7);
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+
+#icons{
+  padding: 35px;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.socialmediaicons{
+  color: #ff94b9;
+  letter-spacing: 7px;
+  font-size: 1em;
+}
+
+.socialmediaicons:hover{
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-bottom: 7px;
+  transition-duration: 0.4s;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
 
 .transparent_img{
 	opacity: 0.5;
@@ -226,9 +344,9 @@ h1 {
 }
 
 .starz{
-    float: right;
-	bottom: 10px;
-	right: 15px;
+  float: right;
+	bottom: 0px;
+	right: 195px;
 }
 
 .stars{
@@ -242,18 +360,31 @@ h1 {
     .div_space{
 		display: none;
 	}
-	
-	#techSkills{
-	    font-size: 2rem;	
-	}
-	
-	#cps2{
-    padding-top: 0px;	
+
+  #aboutMeLeft, #aboutMeRight {
+  padding-left: 30px; 
+  padding-right: 30px; 
 }
 
-#cps3{
-    padding-top: 0px;	
+#aboutMeRight{
+  padding-top: 50px;
 }
+
+#aboutMeLeft{
+  padding-top: 200px;
+}
+  
+#profilepic{
+  border-radius: 150px; 
+  position: absolute; 
+  top: 80px; 
+  left: 43%; 
+  z-index: 5;
+}
+
+#icons{
+    padding: 0px;
+  }
 
 .starz, .stars{
     display: none;
@@ -265,26 +396,36 @@ h1 {
     .div_space{
 		display: none;
 	}
-	
-	#techSkills{
-	    font-size: 2rem;	
-	}
-	
-	#contactLeft{
-	    min-height: 220px;	
-	}
-		
-	#cps2{
-    padding-top: 0px;	
+
+  #aboutMeLeft, #aboutMeRight {
+  padding-left: 30px; 
+  padding-right: 30px; 
 }
 
-#cps3{
-    padding-top: 0px;	
+#aboutMeRight{
+  padding-top: 50px;
 }
+
+#aboutMeLeft{
+  padding-top: 200px;
+}
+	
+#profilepic{
+  border-radius: 150px; 
+  position: absolute; 
+  top: 80px; 
+  left: 32%; 
+  z-index: 5;
+}
+
+#icons{
+    padding: 0px;
+  }
 
 .starz, .stars{
     display: none;
 }
+
 
 }
 

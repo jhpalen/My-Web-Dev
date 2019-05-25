@@ -1,6 +1,6 @@
 "use strict";
 {
-	const txt = 'HAZE PALEN';
+	const txt = 'HAZE';
 	const viscosity = 0.005;
 	const stiffness = 0.99;
 	class Point {
@@ -8,8 +8,9 @@
 			this.c = null;
 			this.x0 = x;
 			this.y0 = y;
-			this.x = x + Math.sin(i) * 100;
-			this.y = y + Math.cos(i) * 100;
+			// wiggliness:
+			this.x = x + Math.sin(i) * 10;
+			this.y = y + Math.cos(i) * 10;
 			this.vx = 0.0;
 			this.vy = 0.0;
 			this.a = 0.0;
@@ -22,10 +23,10 @@
 			this.c = document.createElement("canvas");
 			const ctx = this.c.getContext("2d");
 			this.c.width = this.c.height = 400;
-			ctx.font = "500px Arial Black, Arial";
+			ctx.font = "300px Arial Black, Arial";
 			ctx.fillStyle = color;
 			ctx.textAlign = "center";
-			ctx.fillText(c, 200, 385);
+			ctx.fillText(c, 200, 305);
 		}
 		drawSegment() {
 			ctx.beginPath();
@@ -54,7 +55,8 @@
 				const dy = this.p1.x - this.p0.x;
 				const dx = this.p1.y - this.p0.y;
 				this.a = Math.atan2(dx, dy);
-				this.s = Math.sqrt(dy * dy + dx * dx) / 2;
+				// spacing between characters:
+				this.s = Math.sqrt(dy * dy + dx * dx) / 1.3; 
 				ctx.rotate(this.a);
 				ctx.drawImage(this.c, -this.s * 0.5, -this.s * 0.5, this.s, this.s);
 				ctx.restore();
@@ -137,7 +139,8 @@
 		let x = 0;
 		const sx = canvas.width / (txt.length + 1);
 		for (let i = 0; i < txt.length + 2; i++) {
-			points.push(new Point(i, x, canvas.height / 2));
+			// placement:
+			points.push(new Point(i, x, canvas.height / 2.5));
 			x += sx;
 		}
 		for (let i = 1; i < txt.length + 1; i++) {
@@ -145,7 +148,7 @@
 			p.p0 = points[i - 1];
 			p.p1 = points[i + 1];
 			p.s = sx;
-			p.texture(txt.charAt(i - 1), i === 6 || i === 1 ? "#f80" : "#fff");
+			p.texture(txt.charAt(i - 1), i === 6 || i === 1 ? "#ff94b9" : "#ffd8d5");
 		}
 	}
 	const run = () => {

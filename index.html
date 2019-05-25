@@ -1,10 +1,10 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Haze Palen - Web Developer Portfolio</title>
+    <title>HAZE PALEN</title>
 
     <!-- favicon -->
-	<link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/images/profilepic.jpg" type="image/x-icon">
 	
 	<!-- viewport -->
 	<meta charset="utf-8">
@@ -14,9 +14,6 @@
 
 	<!-- bootstrap | css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<script type="text/javascript" src="assets/js/popper.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script> <!-- writing jquery before bootstrap first -->
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/indexstyle.css">
 	<!-- end of bootstrap | css -->	
 
@@ -26,35 +23,48 @@
 	<!-- fonts -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+	<!-- script -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
 <body>
 <script src="assets/js/script.js"></script>
-<div class="wrapper">
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-<a class="navbar-brand" href="index.html">
-<img src='assets/images/logo.jpg' style="width: 50px; height: 50px; border-radius: 25px">
-</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div id="navbar-nav" class="collapse navbar-collapse">
-<ul class="navbar-nav ml-auto">
-<li class="nav-item"><a class="nav-link button button1 button" href="home.html#About"><span class="navbar-text">About</span></a></li>
-<li class="nav-item"><a class="nav-link button button2" href="home.html#Projects"><span class="navbar-text">Projects</span></a></li>
-<li class="nav-item"><a class="nav-link button button3" href="home.html#Skills"><span class="navbar-text">Technical Skills</span></a></li>
-<li class="nav-item"><a class="nav-link button button4" href="home.html#Contact"><span class="navbar-text">Contact</span></a></li>
-</ul>
-		</div>
-	</nav>
-</header>
-
-    <div class="push"></div>
+<div class="video-container">
+<video autoplay loop muted id="video-bg">
+<source src="https://cdn.shopify.com/s/files/1/0088/1829/4850/files/ts-bg-3.mp4?4286" type="video/mp4">
+</video>
 </div>
-<footer class="footer text-center social">
-	Copyright &copy; 2019 Haze Palen
-</footer>
-    
-	
+
+<form>
+<a href="home.html" id="viewProfile" class="btn form-control">
+  <span class="view"><i class="fa fa-search"></i> View My Profile</span>
+  <span class="peek"><i class="fa fa-search"></i> Take a peek</span>
+</a>
+<a download="Haze Palen Resume" target="_blank" href="Resume_ John Hazon Palen.pdf" class="btn form-control no-deco disable"><i class="fa fa-download"></i> Download Resume</a>
+</form>
+
+<span id="icons">
+	<a href="https://www.facebook.com/hazonpalen"><i class="fab fa-facebook socialmediaicons"></i></a>
+	<a href="https://ph.linkedin.com/in/john-hazon-palen-9a073399"><i class="fab fa-linkedin-in socialmediaicons"></i></a>
+	<a href="https://twitter.com/jhpalen"><i class="fab fa-twitter socialmediaicons"></i></a>
+</span>
+
+<div class="titleMessage">
+<div id="typed-strings">
+    <p>Full-Stack Web Developer</p>
+    <p>Programmer</p>
+    <p>Shopify Guru</p>
+</div>
+<span id="typed"></span>
+</div>
+
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    loop: true,
+    loopCount: Infinity
+  });
+</script>
 </body>
 </html>
