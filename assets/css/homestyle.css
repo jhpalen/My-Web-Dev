@@ -39,7 +39,7 @@ body, html, .row {
   /*logom nga pink*/
   /*background-color: rgba(255, 148, 180); or #ff94b9*/
   /*background-color: rgba(255, 216, 213);*/
-  background-image: linear-gradient(10deg, #ffd8d5, #e7e7e7) !important;  
+  background-image: linear-gradient(10deg, #ffd8d5, #ff94b9) !important;  
   /*background-image: linear-gradient(-50deg, #c0fff4, #ff94b9);  */
   /*light nga pink*/
   /*text-shadow: 0px 2px 5px rgba(255, 216, 213, 0.9); or #ffd8d5*/
@@ -69,6 +69,7 @@ body, html, .row {
 .sticky-top.scrolled {
   background-image: linear-gradient(10deg, #ffd8d5, #ffd8d5) !important;  
   /*background-color: rgba(255, 148, 180) !important;*/
+  transition-duration: 0.5s;
   transition: background-color 1000ms linear;
 }
 
@@ -106,7 +107,7 @@ body, html, .row {
 #aboutMeLeft {
   color: #737373; /*light gray*/
   /*background-image: linear-gradient(-90deg, #ffc0cb, #fff3f5);*/
-  background-image: linear-gradient(to bottom, #ffd8d5, #fff); 
+  background-image: linear-gradient(to bottom, #ffd8d5, #ffd8d5, #ffd8d5, #fff); 
   padding-top: 160px; 
   padding-left: 100px; 
   padding-right: 100px; 
@@ -120,11 +121,19 @@ body, html, .row {
 }*/
 
 #profilepic{
+  height: 150px;
+  width: 150px;
   border-radius: 150px; 
   position: absolute; 
   top: 100px; 
-  left: 44%; 
+  left: 44.5%; 
   z-index: 5;
+}
+
+.sectionlogo{
+  height: 150px;
+  width: 150px;
+  border-radius: 150px; 
 }
 
 #aboutMeRight {
@@ -134,7 +143,7 @@ body, html, .row {
   padding-bottom: 20px;
   color: #737373;
   /*background-image: linear-gradient(-90deg, #f5f5fd, #c0fff4);*/
-  background-image: linear-gradient(to bottom, #c0fff4, #fff);
+  background-image: linear-gradient(to bottom, #c0fff4, #c0fff4, #c0fff4, #fff);
 }
 
 /*========================== P R O J E C T S ==========================*/
@@ -148,12 +157,12 @@ body, html, .row {
   light nga pink: rgba(255, 216, 213, 0.9); or #ffd8d5*/
 
 #Projects{
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #737373;
   /*color: #f18d9e;*/
   /*temporary color*/
-  background-image: linear-gradient(to bottom, #fff, #c0fff4);
-  margin-top: 30px;
-  padding-bottom: 20px;
+  background: url(../images/butterfly.png) no-repeat left fixed, linear-gradient(-90deg, #fff, #c0fff4);
 }
 
 #MyProjectsBox {
@@ -169,10 +178,14 @@ body, html, .row {
   border-radius: 15px;
 }
 
+.capstone{
+  padding-right: 250px;
+}
+
 aside {
   color: #737373;
-  background-image: linear-gradient(-90deg, #ffd8d5, #ffd8d5);  
-  /*background-color: #ffd8d5;*/
+  /*background-image: linear-gradient(-90deg, #ffd8d5, #ffd8d5);*/  
+  background-color: white;
   display: block;
   position: relative;
   margin: 10px 0;
@@ -180,6 +193,17 @@ aside {
   /*background-color: #ff94b9;*/
   padding-top: 20px; 
   padding-bottom: 20px
+}
+
+aside {
+  margin: 12px 0;
+  box-shadow: 0 5px 15px rgba(152,219,198, .7);
+}
+
+aside:hover {
+  margin: 11px 0;
+  transition-duration: 0.4s;
+  box-shadow: 0 5px 15px rgba(255, 148, 180, .7);
 }
 
 aside h3 {
@@ -217,7 +241,7 @@ html aside h3 {
   height: 150px;
   width: 150px;
   opacity: .6;
-  border: 5px solid #e6d72a;
+  border: 3px solid #e6d72a;
 }
 
 .capstonelogo:hover{
@@ -228,11 +252,6 @@ html aside h3 {
 .viewProjectButton{
   color: #fff;
   background-color: #ff94b9;
-}
-
-.viewProjectButton:hover{
-  color: #fff;
-  background-color: #98dbc6;
 }
 
 
@@ -344,22 +363,33 @@ html aside h3 {
 }
 
 .starz{
-  float: right;
-	bottom: 0px;
-	right: 195px;
+  position: absolute; 
+  top: 2380px; 
+  right: 4%; 
+  z-index: 5;
 }
 
-.stars{
+/*.stars{
     float: right;
 	z-index: 1;
 	left: 120px;
 	top: 1250px;
-}
+}*/
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .div_space{
 		display: none;
 	}
+
+  .capstone{
+  padding-right: 18px;
+}
+
+.sectionlogo{
+  height: 125px;
+  width: 125px;
+  border-radius: 150px; 
+}
 
   #aboutMeLeft, #aboutMeRight {
   padding-left: 30px; 
@@ -377,7 +407,7 @@ html aside h3 {
 #profilepic{
   border-radius: 150px; 
   position: absolute; 
-  top: 80px; 
+  top: 100px; 
   left: 43%; 
   z-index: 5;
 }
@@ -397,6 +427,16 @@ html aside h3 {
 		display: none;
 	}
 
+  .capstone{
+  padding-right: 18px;
+}
+
+.sectionlogo{
+  height: 125px;
+  width: 125px;
+  border-radius: 150px; 
+}
+
   #aboutMeLeft, #aboutMeRight {
   padding-left: 30px; 
   padding-right: 30px; 
@@ -413,7 +453,7 @@ html aside h3 {
 #profilepic{
   border-radius: 150px; 
   position: absolute; 
-  top: 80px; 
+  top: 100px; 
   left: 32%; 
   z-index: 5;
 }
