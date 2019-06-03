@@ -13,6 +13,7 @@
 	<!-- end of viewport -->
 
 	<!-- bootstrap | css -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script> <!-- writing jquery before bootstrap first -->
@@ -27,6 +28,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -102,8 +104,6 @@
     </div>
 </div>
 
-
-
 <div class="row" id="Projects">
 
 	<div class="text-center animated fadeInDown col-lg-12 col-md-12 col-sm-12">
@@ -112,7 +112,7 @@
 		  <!-- <hr style="background-color: #e6d72a" class="w-75">
 		  <hr style="background-color: #e6d72a" class="w-50">
 		  <hr style="background-color: #e6d72a" class="w-25"> -->
-		  <h1><img src="assets/images/projects.gif" class="sectionlogo"> My Projects</h1>
+		  <h1 data-aos="fade-up"><img src="assets/images/projects.gif" class="sectionlogo"> My Projects</h1>
 
           <!-- <img src="http://blog.pendaproductions.com/wp-content/uploads/2016/04/Dribbble-Digital-Icon-Pack-animated-gif-by-Seth-Eckert.gif" style="border-radius: 15px" height="125px"> -->
           
@@ -126,15 +126,15 @@
 	</div>
 
 	<div class="capstone animated fadeInDown col-lg-6 col-md-12 col-sm-12">
-		<aside>
+		<aside data-aos="fade-right">
           <h3>Capstone 1</h3>
-     
+    
 <div class="text-center"> 
 <img src="assets/images/cps1.jpg" alt="Capstone 1" class="capstonelogo">
 </div>
 
-<h6 class="text-center">Portfolio Development</h6>
-Website conceptualized for animal welfare.
+<h6 class="text-center">Front-End</h6>
+A static website conceptualized for animal welfare.
 
 <h6>Key features</h6>
 <ul>
@@ -155,7 +155,7 @@ Website conceptualized for animal welfare.
 	</div>
 
 	<div class="capstone animated fadeInDown col-lg-6 col-md-12 col-sm-12">
-		<aside>
+		<aside data-aos="fade-right">
           <h3>Capstone 2</h3>
           <div class="text-center">
           <img src="assets/images/cps2.jpg" alt="Capstone 2" class="capstonelogo">
@@ -184,7 +184,7 @@ ERDplus, DBdesigner, Mockaroo</li>
 	</div>
 
 	<div class="capstone animated fadeInDown col-lg-6 col-md-12 col-sm-12">
-		<aside>
+		<aside data-aos="fade-right">
           <h3>Capstone 3</h3>
   <div class="text-center">
   <img src="assets/images/oppa.jpg" alt="Capstone 3" class="capstonelogo">        
@@ -213,7 +213,7 @@ Escort for Hire/Booking website.
 	<div class="text-center animated fadeInDown col-lg-12 col-md-12 col-sm-12">
         
           <!-- <img src="http://blog.pendaproductions.com/wp-content/uploads/2016/04/Dribbble-Digital-Icon-Pack-animated-gif-by-Seth-Eckert.gif" style="border-radius: 15px" height="125px"> -->
-          <h1><img src="assets/images/contact.gif" class="sectionlogo"> Contact Me</h1>
+          <h1 data-aos="fade-up"><img src="assets/images/contact.gif" class="sectionlogo"> Contact Me</h1>
           <!-- <hr style="background-color: #e6d72a" class="w-75"> -->
     </div>
        <div class="text-center animated fadeInUp my-4 col-lg-12 col-md-12 col-sm-12" id="contactRight" style="position: relative">
@@ -238,8 +238,12 @@ Escort for Hire/Booking website.
 </div> 
 
 <script type="text/javascript">
+	AOS.init({
+  duration: 1000,
+});
+
 	$(function () {
-  $(document).scroll(function () {
+  	$(document).scroll(function () {
     var $nav = $(".sticky-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });

@@ -271,7 +271,7 @@ html aside h3 {
   /*temporary color*/
   background-image: linear-gradient(to bottom, #c0fff4, #fff, #e7e7e7);
   padding-top: 60px;
-  padding-bottom: 150px;
+  padding-bottom: 90px;
 }
 
 #icons{
@@ -299,26 +299,16 @@ html aside h3 {
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-
-
-
-
-
-
 .transparent_img{
 	opacity: 0.5;
 }
 
-
-
-
-
 /* relevant styles */
-.img__wrap {
+/*.img__wrap {
   position: relative;
-}
+}*/
 
-.img__description {
+/*.img__description {
   position: absolute;  
   background: rgba(29, 106, 154, 0.72);
   color: #fff;
@@ -329,21 +319,16 @@ html aside h3 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
-  /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
-}
+}*/
 
-.img__wrap:hover .img__description {
+/*.img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
-}
+}*/
 
 .about_img:hover{
 	opacity: 0.5;
-}
-
-.transparent_img:hover{
-	opacity: 1.0;
 }
 
 #icons{
@@ -375,6 +360,61 @@ html aside h3 {
 	left: 120px;
 	top: 1250px;
 }*/
+
+@media only screen and (max-width: 1439px) and (min-width: 961px) {
+    .div_space{
+    display: none;
+  }
+
+  #Projects{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #737373;
+  /*color: #f18d9e;*/
+  /*temporary color*/
+  background: url(../images/butterfly.png) no-repeat right fixed, linear-gradient(90deg, #fff, #c0fff4);
+}
+
+  .capstone{
+  padding-right: 18px;
+}
+
+.sectionlogo{
+  height: 125px;
+  width: 125px;
+  border-radius: 150px; 
+}
+
+  #aboutMeLeft, #aboutMeRight {
+  padding-left: 30px; 
+  padding-right: 30px; 
+}
+
+#aboutMeRight{
+  padding-top: 200px;
+}
+
+#aboutMeLeft{
+  padding-top: 200px;
+}
+  
+#profilepic{
+  border-radius: 150px; 
+  position: absolute; 
+  top: 100px; 
+  left: 43%; 
+  z-index: 5;
+}
+
+#icons{
+    padding: 0px;
+  }
+
+.starz, .stars{
+    display: none;
+}
+
+}
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .div_space{
