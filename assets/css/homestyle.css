@@ -34,15 +34,8 @@ body, html, .row {
 }
 
 .navbar {
-  /*background-color: #ffd8d5;*/
   font-weight: bold;
-  /*logom nga pink*/
-  /*background-color: rgba(255, 148, 180); or #ff94b9*/
-  /*background-color: rgba(255, 216, 213);*/
-  background-image: linear-gradient(10deg, #ffd8d5, #ff94b9) !important;  
-  /*background-image: linear-gradient(-50deg, #c0fff4, #ff94b9);  */
-  /*light nga pink*/
-  /*text-shadow: 0px 2px 5px rgba(255, 216, 213, 0.9); or #ffd8d5*/
+  background-image: linear-gradient(90deg, #ffd8d5, #ff94b9, #ffd8d5) !important;  
 }
 
 .navbar-collapse{
@@ -58,17 +51,36 @@ body, html, .row {
 }
 
 .navbar-brand{
+  color: #f18d9e !important;
   padding: 5px;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation-name: Changecolor;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-direction: alternate;
 }
 
-.navbar-brand:hover{
-  border-radius: 10px;
-  background-color: #ffd8d5;
+ @keyframes Changecolor {
+  0%{
+    background-color: #f18d9e;
+  }
+  30%{
+    background-color: #f18d9e;
+  }
+  50%{
+    background-color: #5bc8ac;
+  }
+100% {
+    background-color: #f18d9e;
+}
 }
 
 .sticky-top.scrolled {
-  background-image: linear-gradient(10deg, #ffd8d5, #ffd8d5) !important;  
-  /*background-color: rgba(255, 148, 180) !important;*/
+  background-color: rgba(0, 0, 0, .5) !important;  
   transition-duration: 0.5s;
   transition: background-color 1000ms linear;
 }
@@ -84,41 +96,14 @@ body, html, .row {
   background-color: #ff94b9;
 }
 
-/*.section {
-	min-height: 450px;
-  min-width: 100%;
-}*/
-
-/*.center {
-  position: relative;
-  overflow: auto;
-  min-height: 300px;
-}*/
-
-/*h1 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}*/
-
 #aboutMeLeft {
   color: #505050; /*light gray*/
-  /*background-image: linear-gradient(-90deg, #ffc0cb, #fff3f5);*/
   background-image: linear-gradient(to bottom, #ffd8d5, #ffd8d5, #ffd8d5, #fff); 
   padding-top: 160px; 
   padding-left: 100px; 
   padding-right: 100px; 
   padding-bottom: 20px;
 }
-
-/*#aboutMeLeft:hover {
-  color: black;
-  transition-duration: 0.4s;
-  background-color: #ffd8d5;
-}*/
 
 #profilepic{
   height: 150px;
@@ -148,21 +133,11 @@ body, html, .row {
 
 /*========================== P R O J E C T S ==========================*/
 
-/*color palette:
-  aquamarine: #98dbc6;
-  turquoise: #5bc8ac;
-  canary yellow: #e6d72a;
-  pink tulip: #f18d9e;
-  logom nga pink: rgba(255, 148, 180); or #ff94b9
-  light nga pink: rgba(255, 216, 213, 0.9); or #ffd8d5*/
-
 #Projects{
   padding-top: 50px;
   padding-bottom: 50px;
   color: #505050;
-  /*color: #f18d9e;*/
-  /*temporary color*/
-  background: url(../images/butterfly.png) no-repeat left fixed, linear-gradient(-90deg, #fff, #c0fff4);
+  background: url(../images/butterfly.png) no-repeat left fixed, linear-gradient(-180deg, #fff, #c0fff4);
 }
 
 #MyProjectsBox {
@@ -173,8 +148,6 @@ body, html, .row {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: white;
-  /*background-color: #f18d9e;*/
-  /*padding: 115px 90px 115px 90px;*/
   border-radius: 15px;
 }
 
@@ -207,7 +180,7 @@ aside:hover {
 }
 
 aside h3 {
-  font: bold 12px Sans-Serif;
+  font: bold 16px Sans-Serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
@@ -219,7 +192,7 @@ aside h3 {
 /* Class name via Modernizr */
 html aside {
   border-left: 34px solid #98dbc6;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
 }
 html aside h3 {
   /* Abs positioning makes it not take up vert space */
@@ -237,7 +210,7 @@ html aside h3 {
 
 .capstonelogo{
   border-radius: 15px; 
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   height: 150px;
   width: 150px;
   border: 3px solid #e6d72a;
@@ -354,61 +327,6 @@ html aside h3 {
 	left: 120px;
 	top: 1250px;
 }*/
-
-@media only screen and (max-width: 1439px) and (min-width: 961px) {
-    .div_space{
-    display: none;
-  }
-
-  #Projects{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #505050;
-  /*color: #f18d9e;*/
-  /*temporary color*/
-  background: url(../images/butterfly.png) no-repeat right fixed, linear-gradient(90deg, #fff, #c0fff4);
-}
-
-  .capstone{
-  padding-right: 18px;
-}
-
-.sectionlogo{
-  height: 125px;
-  width: 125px;
-  border-radius: 150px; 
-}
-
-  #aboutMeLeft, #aboutMeRight {
-  padding-left: 30px; 
-  padding-right: 30px; 
-}
-
-#aboutMeRight{
-  padding-top: 200px;
-}
-
-#aboutMeLeft{
-  padding-top: 200px;
-}
-  
-#profilepic{
-  border-radius: 150px; 
-  position: absolute; 
-  top: 100px; 
-  left: 43%; 
-  z-index: 5;
-}
-
-#icons{
-    padding: 0px;
-  }
-
-.starz, .stars{
-    display: none;
-}
-
-}
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .div_space{
