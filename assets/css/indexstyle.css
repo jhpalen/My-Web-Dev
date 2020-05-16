@@ -82,6 +82,7 @@ form{
   background-color: #ff94b9;
   margin: 5px auto;
   color: white;
+  white-space: inherit;
 }
 
 .btn:hover{
